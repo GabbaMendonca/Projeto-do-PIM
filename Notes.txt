@@ -1,0 +1,12 @@
+Tela de login:
+
+nome, emial, telefone,
+é professor,
+é convidado.
+
+-
+
+Tela de inicio mostra quantidade de lugares para :
+
+convidados,
+professores
