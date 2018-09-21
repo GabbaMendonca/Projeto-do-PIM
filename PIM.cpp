@@ -5,9 +5,7 @@
 #define max 30
 
 int main ()
-{
-    inicio:
-
+{   
     TelaDeLogin:
 
     char loginSis[max], senhaSis[max];
@@ -17,7 +15,10 @@ int main ()
     strcpy(senhaSis, "adm");
 
     // printf("Senhas no sistema %s , %s \n", loginSis,senhaSis); //linha de teste
-
+    system("clear");
+    printf("\n");
+    printf("\n");
+    
     printf("Login : ");
     fgets(login,max,stdin);
 
@@ -36,28 +37,47 @@ int main ()
         if( strcmp (senha, senhaSis) == 10 )
         {
                 //printf("Autorizado Acesso!");
-            goto Menu ;
+            goto Menu;
         }else
         {
             printf("senha incorreta!");
+            goto TelaDeLogin;
         }
     }
     else
     {
         printf("user nao existe");
+        goto TelaDeLogin;
     }
 
-    Menu:
 
+
+    Menu:
+    
+    system("clear");
     printf("Menu!");
     printf("\n");
     printf("\n 1 . Tela de configuracoes");
     printf("\n 2 . iniciar tela de cadastro");
-
+    printf("\n");
+    printf("\n");
+    printf("\n digite o codigo do menu :");
+    
     int opc;
     scanf("%d", opc);
 
-    switch()
+    switch(opc)
+    {
+        case 1:
+        goto Menu; // tela de confg
+        break;
+        
+        case 2:
+        goto Menu; // inicia tela de cadastro
+        break;
+    }
+
+
 
     TelaDeCadastro:
     //system("clear");
@@ -83,6 +103,8 @@ int main ()
     printf("%s", nome);
     printf("%s", email);
     printf("%d", tel);
+
+
 
     TelaDeConfiguracoes:
 
