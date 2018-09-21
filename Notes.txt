@@ -1,8 +1,22 @@
 Tela de login:
 
-nome, emial, telefone,
-é professor,
-é convidado.
+login padrao.
+
+nome :
+emial :
+telefone :
+data de nascimento :
+
+
+é professor - validar a informação
+é convidado - validar a informação
+
+Pre-cadastro com fila de espera.
+Mostrar lugares vagos
+
+-
+
+castradar lugar e palestra
 
 -
 
@@ -10,3 +24,19 @@ Tela de inicio mostra quantidade de lugares para :
 
 convidados,
 professores
+
+
+elemetos do cadastro
+
+
+nome
+emial
+data de nascimento
+telefone
+
+qual a palestra (com sinopse)
+
+
+
+
+pesquisa de qualidade
