@@ -2,23 +2,30 @@
 #include <stdlib.h>
 #include <string.h>
 
+// git remote add origin https://github.com/GabbaMendonca/Projeto-do-PIM.git 
+// git remote add origin https://github.com/GabbaMendonca/Projeto-do-PIM.git
+// origin https://github.com/GabbaMendonca/Projeto-do-PIM.git
+
 #define max 30
 
 int main ()
 {   
-    TelaDeLogin:
+    TelaDeLogin: // inicio da tela de login
 
+    // variaveis da tela de login
     char loginSis[max], senhaSis[max];
     char login[max], senha[max];
 
-    strcpy(loginSis, "adm");
+    // senhas de adm
+    strcpy(loginSis, "adm"); // inseri a palavra adm nas varaveis
     strcpy(senhaSis, "adm");
 
     // printf("Senhas no sistema %s , %s \n", loginSis,senhaSis); //linha de teste
-    system("clear");
+    system("clear"); // limpa a tela do console
     printf("\n");
     printf("\n");
     
+    // requisitando os dados
     printf("Login : ");
     fgets(login,max,stdin);
 
@@ -27,21 +34,20 @@ int main ()
 
     // printf("senhas inseridas %s,%s \n", login,senha); // linha de teste 
 
-    // int resultado;
-    // resultado = strcmp (login, loginSis); // valor que retorna comparação de senhas
+    // int resultado; // linha de teste
+    // resultado = strcmp (login, loginSis); // valor que retorna comparação de senhas - linha de teste
 
-    // printf(" retorna a senha %d \n", resultado);
+    // printf(" retorna a senha %d \n", resultado); // linha de teste
 
-    if ( strcmp (login, loginSis) == 10 )
+    if ( strcmp (login, loginSis) == 10 ) // testa para ver se o user e a senha estão corretos
     {
         if( strcmp (senha, senhaSis) == 10 )
         {
-                //printf("Autorizado Acesso!");
-            goto Menu;
+            goto Menu; // comando goto vai para um lugar do codigo (nao feito ainda)
         }else
         {
             printf("senha incorreta!");
-            goto TelaDeLogin;
+            goto TelaDeLogin; // volta para o inicio para inserir login e senha novamente
         }
     }
     else
@@ -52,7 +58,7 @@ int main ()
 
 
 
-    Menu:
+    Menu: // menu de escolha do adm para configurar o sistema
     
     system("clear");
     printf("Menu!");
@@ -69,17 +75,17 @@ int main ()
     switch(opc)
     {
         case 1:
-        goto Menu; // tela de confg
+        goto Menu; // tela de confg (nao feito)
         break;
         
         case 2:
-        goto Menu; // inicia tela de cadastro
+        goto Menu; // inicia tela de cadastro (nao feito)
         break;
     }
 
 
 
-    TelaDeCadastro:
+    TelaDeCadastro: // tela onde o participante ira se cadastrar
     //system("clear");
     
     char nome[max], email[max];
@@ -88,7 +94,7 @@ int main ()
     printf("Tela de Cadastro \n");
     printf("\n");
 
-    printf("Nome     : ");
+    printf("Nome     : ");  
     fgets(nome,max,stdin);
 
     printf("E-mail   : ");
@@ -106,7 +112,7 @@ int main ()
 
 
 
-    TelaDeConfiguracoes:
+    TelaDeConfiguracoes: // configura as sala de palaestras onde sera gerada a matrix posteriormente
 
     int filas,colunas;
 

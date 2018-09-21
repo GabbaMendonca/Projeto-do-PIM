@@ -11,8 +11,18 @@ data de nascimento :
 é professor - validar a informação
 é convidado - validar a informação
 
+O cadastro dos professores e convidados, deve ser feito antes pelo adm
+ou ser validado na hora do cadastro com algum codigio ou coisa parecido.
+
+O cadastro do palestrante deve ser feito antes por um adm.
+
+-
+
 Pre-cadastro com fila de espera.
-Mostrar lugares vagos
+Mostrar lugares vagos para pessoas que chegarem sem na hora.
+Mostar lugares vagos de pessoas que ainda nao cheagarem.
+
+Pessoa que chegarem devem validar a entrada.
 
 -
 
@@ -23,20 +33,12 @@ castradar lugar e palestra
 Tela de inicio mostra quantidade de lugares para :
 
 convidados,
-professores
+professores.
 
-
-elemetos do cadastro
-
-
-nome
-emial
-data de nascimento
-telefone
+-
 
 qual a palestra (com sinopse)
 
+-
 
-
-
-pesquisa de qualidade
+pesquisa de qualidade depois da palestra (?).
